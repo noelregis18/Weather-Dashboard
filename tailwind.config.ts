@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Weather-specific colors
+				weather: {
+					blue: {
+						light: '#63B8FF',
+						DEFAULT: '#2B93D9',
+						dark: '#1A73B6'
+					},
+					cloud: {
+						light: '#F8F9FA',
+						DEFAULT: '#E9ECEF',
+						dark: '#DEE2E6'
+					},
+					storm: {
+						light: '#ADB5BD',
+						DEFAULT: '#6C757D',
+						dark: '#505A64'
+					}
 				}
 			},
 			borderRadius: {
