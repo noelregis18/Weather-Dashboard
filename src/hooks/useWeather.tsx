@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { toast } from 'sonner';
 
 // OpenWeather API key - normally would be in env vars
-const API_KEY = 'eb4cf8b1b1904d1b9507155b62b38b30';
+const API_KEY = 'ca45a387029e028586e9170928157950';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 // Types
