@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -87,6 +88,11 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Weather specific colors for dark mode */
+    --weather-blue: 202 68% 45%;
+    --weather-blue-light: 202 100% 70%;
+    --weather-blue-dark: 202 70% 40%;
   }
 }
 
@@ -97,5 +103,21 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Responsive utility classes */
+@layer utilities {
+  .responsive-container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .weather-card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-colors duration-200;
+  }
+  
+  /* Ensure all weather text is readable in both modes */
+  .weather-text {
+    @apply text-gray-900 dark:text-gray-100;
   }
 }

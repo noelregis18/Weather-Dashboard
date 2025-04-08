@@ -66,9 +66,9 @@ export default {
 				// Weather-specific colors
 				weather: {
 					blue: {
-						light: '#63B8FF',
-						DEFAULT: '#2B93D9',
-						dark: '#1A73B6'
+						light: 'hsl(var(--weather-blue-light, 202 100% 70%))',
+						DEFAULT: 'hsl(var(--weather-blue, 202 68% 45%))',
+						dark: 'hsl(var(--weather-blue-dark, 202 70% 40%))'
 					},
 					cloud: {
 						light: '#F8F9FA',
